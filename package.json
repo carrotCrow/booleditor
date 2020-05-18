@@ -1,10 +1,13 @@
 {
-  "name": "webserver",
+  "name": "boolapp-editor",
   "version": "1.0.0",
-  "description": "",
+  "description": "quick dev environment for simple webpage with reactjs + tailwind css with parcel-bundler.",
   "main": "index.js",
   "dependencies": {
     "autoprefixer": "^9.7.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.14",
     "parcel-bundler": "^1.12.4",
     "postcss-cli": "^7.1.1",
     "react": "^16.13.1",
@@ -13,9 +16,18 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "parcel index.html",
-    "build:css": "npx tailwindcss build ./styles/tailwind.css -o ./dist/styles.css"
+    "dev": "parcel ./client/index.html --out-dir public",
+    "server": "node ./server/index.js",
+    "build:css": "npx tailwindcss build ./styles/tailwind.css -o ./client/components/main.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carrotCrow/reactailwind-parcelbundler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carrotCrow/reactailwind-parcelbundler/issues"
+  },
+  "homepage": "https://github.com/carrotCrow/reactailwind-parcelbundler#readme"
 }

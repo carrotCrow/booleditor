@@ -1,0 +1,5 @@
+#ignore parcel generated
+public
+.cache
+#ignore npm dependencies
+node_modules
