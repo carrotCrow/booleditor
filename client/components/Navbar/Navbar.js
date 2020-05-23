@@ -5,7 +5,7 @@ import Dropdown from '../Dropdown/Dropdown'
 
 const Navbar = ()=>{
     return(
-        <div className="flex justify-around sm:justify-between px-px py-4 shadow-inner shadow font-kanit">
+        <div className="flex justify-around sm:justify-between px-px py-4 shadow-inner shadow-xl font-kanit relative z-50">
             <div className="flex my-auto sm:hidden"><ion-icon name="menu-outline" style={{'fontSize':'48px'}}></ion-icon></div>
             <div className="flex sm:ml-4">
                 <Link to="/" className="flex">
