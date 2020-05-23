@@ -3,9 +3,9 @@ import SlideCard from './Slide/Slide'
 import './Card.css'
 import Catalog from './Catalog'
 const AppContent = props=>{
+    
     return (
-    <div className="font-kanit" style={{height:'100vx'}}>
-
+    <div className="font-kanit">
         <SlideCard cardlist={
             [
                 'img-1',
@@ -13,11 +13,7 @@ const AppContent = props=>{
                 'img-3',
                 'img-4',
                 'img-5',
-                'img-1',
-                'img-2',
-                'img-3',
-                'img-4',
-                'img-5',
+                'img-6',
 
             ]
         }/>
@@ -26,6 +22,8 @@ const AppContent = props=>{
         <Catalog tag="Lastest"/>
         <Catalog tag="Romance"/>
         
+    
+    
     </div>
     )
 }
